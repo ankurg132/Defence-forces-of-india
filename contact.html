@@ -20,6 +20,13 @@
   background-color: #f2f2f2;
   padding: 10px;
 }
+@media only screen and (max-width: 800px) {
+  img {
+    height:80px;
+    width:auto;
+    overflow: hidden;
+  }
+}
         </style>
     </head>
     <body style="background-color: lightgoldenrodyellow;">
@@ -63,14 +70,17 @@
                     </div>
                     <div data-aos="fade-up-left" class="col-lg-4">
                 <form action="#">
-                    <div class="mb-4">
-                  <label class="form-label" for="fname">First Name</label>
-                  <input class="form-control" type="text" id="fname" name="firstname" placeholder="Your name.."></div>
-                  <div class="mb-4">
-                  <label  class="form-label" for="lname">Last Name</label>
+                    <div class="mb-3">
+                  <label class="form-label" for="fname">First Name: </label>
+                  <input class="form-control" type="text" id="fname" name="firstname" placeholder="Your first name.."></div>
+                  <div class="mb-3">
+                  <label  class="form-label" for="lname">Last Name: </label>
                   <input class="form-control" type="text" id="lname" name="lastname" placeholder="Your last name.."></div>
-                  <div class="mb-4">
-                  <label  class="form-label" for="subject">Subject</label>
+                  <div class="mb-3">
+                    <label  class="form-label" for="email">E-mail ID: </label>
+                    <input class="form-control" type="email" id="email" name="email" required placeholder="dev@gmail.com"></div>
+                  <div class="mb-3">
+                  <label  class="form-label" for="subject">Feedback: </label>
                   <textarea class="form-control" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                   </div>
                   <input class="btn btn-success" type="submit" value="Submit">
@@ -78,7 +88,8 @@
               </div>
               <div data-aos="fade-right">
               <h4>Contact Developer</h4>
-              <p>You can contact the website developer at <a href="mailto:ankurgcodes@gmail.com">here.</a></p>
+              <p>You can contact the website developer at <a href="mailto:ankurgcodes@gmail.com">here.</a> or by writing your feedback 
+              in the above form.</p>
             </div></div>
           </div>
           <br><br><br>
